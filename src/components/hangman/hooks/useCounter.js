@@ -12,14 +12,12 @@ export const useCounter = (initCounter, {max, min}) => {
         if (counter > min) {
             setCounter(counter - step);
         }
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-/////// Detectar cuando el jugador pierde la partida y mostrar un mensaje de GAME OVER        
+// Detectar cuando el jugador pierde la partida y mostrar un mensaje de GAME OVER        
         else {
             Swal.fire('fin del juego: GAME OVER');}
     };
 
-//////////////////////////////////////////////////////////////////////////////////////////////    
+ 
     
    const resetCounter = () => {
        setCounter(initCounter);
